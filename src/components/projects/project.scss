@@ -1,0 +1,38 @@
+.grid-main {
+  display: grid;
+  grid-template-columns: 33% auto;
+  grid-template-rows: 1fr;
+}
+
+.projekt-reiter {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.projekt-details {
+  grid-column: 2;
+}
+
+.background-faber {
+  margin-top: -20%;
+  margin-left: 15%;
+  opacity: 0.3;
+  // background-image: url('../../img/testimmage.jpeg');
+}
+
+.fadein {
+  opacity: 1;
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}

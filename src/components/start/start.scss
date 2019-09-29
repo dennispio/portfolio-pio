@@ -1,0 +1,113 @@
+.content-mitte {
+  // Center everything ever
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: left;
+  min-height: 100vh;
+  display: flex;
+}
+
+.fade-out {
+  -webkit-animation: fadeout 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeout 2s; /* Firefox < 16 */
+  -ms-animation: fadeout 2s; /* Internet Explorer */
+  -o-animation: fadeout 2s; /* Opera < 12.1 */
+  animation: fadeout 2s;
+
+  @keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadeout {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+.projectfadein-text {
+  opacity: 0;
+  color: white;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  45% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+    transform: scale(0.92);
+  }
+}
+
+.projekt-text {
+  font-size: 3em;
+}
+
+.buttons {
+  border: 2px solid white;
+  margin-top: 40px;
+  margin-left: 20px;
+  width: 300px;
+  height: 50px;
+  color: white;
+  background-color: black;
+}
+
+// Animate the size, outside
+.pulse:hover,
+.pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+//=== Set button colors
+// If you wonder why use Sass vars or CSS custom properties...
+// Make a map with the class names and matching colors
+$colors: (
+  pulse: white,
+);
+
+// Sass variables compile to a static string; CSS variables are dynamic and inherited
+// Loop through the map and set CSS custom properties using Sass variables
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 90deg)};
+  }
+}

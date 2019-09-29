@@ -1,7 +1,14 @@
-import React, { ReactElement } from 'react'
+import React, { ReactElement, useState, useContext, useEffect } from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layouts/main/Layout'
 import { i18n } from '../constants/i18n'
+import Start from '../components/start/start'
+import Navigation from '../components/shared/navigation/navigation'
+import Bio from '../components/bio/bio'
+import Timeline from '../components/timeline/timeline'
+import Project from '../components/projects/project'
+import Kontakt from '../components/kontakt/kontakt'
+import Footer from '../components/shared/footer/footer'
 
 interface HomepageData {
   fields: {
@@ -41,31 +48,41 @@ interface IndexProps {
   }
 }
 
+interface StartProps {
+  startview: boolean
+  newValue: boolean
+}
+
 const IndexPage = ({ pageContext: { locale }, ...props }: IndexProps): ReactElement => {
   const { homePageData: data } = props.data
   const { edges: posts } = props.data.blogPosts
+  const [startview, setStartview] = useState(false)
+
+  const startviewhandler = ({ newValue }: StartProps): void => {
+    setTimeout((): void => {
+      setStartview(newValue)
+    }, 8000)
+  }
+
   return (
     <Layout locale={locale}>
-      <h1>title: {data.frontmatter.title}</h1>
-      <p>Content: {data.frontmatter.text}</p>
-      <p>Locale: {locale}</p>
-      <h2>{i18n[locale].text}</h2>
-      <Link to={locale === 'en' ? '/de' : '/'}>
-        <p>Change language</p>
-      </Link>
-      <h2>BlogPosts:</h2>
-      {posts.map(
-        ({ node: post }, i): JSX.Element => (
-          <div key={i}>
-            <h3>Blog Post Title: {post.frontmatter.title}</h3>
-            <p>Blog Post Description: {post.frontmatter.description}</p>
-            <p>Blog Post Date: {post.frontmatter.date}</p>
-            <Link to={post.fields.slug} title="link to blog post">
-              Link to blog post
-            </Link>
-          </div>
-        ),
+      {startview == false ? (
+        <Start onChange={startviewhandler} />
+      ) : (
+        <div>
+          <Navigation />
+          <Bio />
+          <div className="h-40" />
+          <Timeline />
+          <div className="h-10" />
+          <Project />
+          <div className="h-40" />
+          <Kontakt />
+          <div className="h-40" />
+          <Footer />
+        </div>
       )}
+      {console.log(startview)}
     </Layout>
   )
 }

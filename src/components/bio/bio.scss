@@ -1,0 +1,81 @@
+.paragraph-block {
+  max-width: 500px;
+}
+
+.margin-top {
+  margin-top: 50vh;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-items {
+  padding: 4px;
+}
+
+.breite-leer {
+  width: 10%;
+}
+
+.breite {
+  width: 25%;
+}
+
+.flex-direction {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.mitte {
+  // Center everything ever
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: left;
+  min-height: 80vh;
+  display: flex;
+}
+
+.fade-in-unten {
+  animation-name: fadeIn-bottom, opacity;
+  animation-duration: 2s, 2s;
+  animation-delay: 2s, 0s;
+}
+
+.fade-in-mitte {
+  animation-name: fadein, opacity;
+  animation-duration: 2s, 1s;
+  animation-delay: 1s, 0s;
+}
+
+@keyframes fadeIn-bottom {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
