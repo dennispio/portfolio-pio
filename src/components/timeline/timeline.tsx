@@ -8,7 +8,7 @@ const Timeline = (): JSX.Element => {
       <div>
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/4">
-            <span className="text-lg">2013 - 2017</span>
+            <span className="md:text-lg md:text-white text-xs text-grey1">2013 - 2017</span>
           </div>
           <div className="md:w-1/12" />
           <div className="flex flex-col">
@@ -37,7 +37,7 @@ const Timeline = (): JSX.Element => {
         </div>
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/4">
-            <span className="text-lg">2018 - 2019</span>
+            <span className="md:text-lg md:text-white text-xs text-grey1">2018 - 2019</span>
           </div>
           <div className="md:w-1/12" />
 
@@ -67,7 +67,7 @@ const Timeline = (): JSX.Element => {
 
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/4">
-            <span className="text-lg">2018 - 2019</span>
+            <span className=" md:text-lg md:text-white text-xs text-grey1">2018 - 2019</span>
           </div>
           <div className="md:w-1/12" />
 
@@ -99,7 +99,7 @@ const Timeline = (): JSX.Element => {
 
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/4">
-            <span className="text-lg">2018 - TODAY</span>
+            <span className="md:text-lg md:text-white text-xs text-grey1">2018 - TODAY</span>
           </div>
           <div className="md:w-1/12" />
 
@@ -129,9 +129,9 @@ const Timeline = (): JSX.Element => {
 
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/4">
-            <span className="text-lg">2018 - TODAY</span>
+            <span className="md:text-lg md:text-white text-xs text-grey1">2018 - TODAY</span>
           </div>
-          <div className="wd:w-1/12" />
+          <div className="md:w-1/12" />
 
           <div className="flex flex-col">
             <p className="text-lg">

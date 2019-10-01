@@ -33,7 +33,7 @@ const Start = ({ onChange }: Start): JSX.Element => {
             </button>
           </div>
         ) : (
-          <span className="projectfadein-text md:text-6xl text-2xl">TIME FOR THE NEXT PROJECT ?</span>
+          <span className="projectfadein-text md:text-6xl text-xl">TIME FOR THE NEXT PROJECT ?</span>
         )}
       </div>
     </div>
