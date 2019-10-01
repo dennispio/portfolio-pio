@@ -14,31 +14,31 @@ const Bio = (): JSX.Element => {
           </p>
         </div>
       </div>
-      <div className="flex fade-in-unten">
-        <div className="flex-direction breite">
-          <div className="skill-items text-lg text-grey1 typewriter-text">FRONTEND</div>
-          <div className="skill-items  text-sm">JAVASCRIPT</div>
-          <div className="skill-items  text-sm ">TYPESCRIPT</div>
-          <div className="skill-items  text-sm">REACTJS</div>
-          <div className="skill-items  text-sm">GATSBYJS</div>
+      <div className="flex flex-wrap md:flex-no-wrap fade-in-unten">
+        <div className="flex-direction w-1/2">
+          <div className="p-1 text-lg text-grey1 typewriter-text">FRONTEND</div>
+          <div className="p-1 text-sm">JAVASCRIPT</div>
+          <div className="p-1 text-sm ">TYPESCRIPT</div>
+          <div className="p-1 text-sm">REACTJS</div>
+          <div className="p-1 text-sm">GATSBYJS</div>
         </div>
-        <div className="flex-direction breite">
-          <div className="skill-items text-lg text-grey1">BACKEND</div>
-          <div className="skill-items text-sm">JAVA</div>
-          <div className="skill-items  text-sm">NODEJS</div>
-          <div className="skill-items  text-sm ">EXPRESSJS</div>
+        <div className="flex-direction w-1/2">
+          <div className="p-1 text-lg text-grey1">BACKEND</div>
+          <div className="p-1 text-sm">JAVA</div>
+          <div className="p-1 text-sm">NODEJS</div>
+          <div className="p-1 text-sm ">EXPRESSJS</div>
         </div>
-        <div className="flex-direction breite">
-          <div className="skill-items text-lg text-grey1">WEITERES</div>
-          <div className="skill-items text-sm">SCRUM</div>
-          <div className="skill-items text-sm">USABILITY</div>
-          <div className="skill-items text-sm">UX DESIGN</div>
+        <div className="flex-direction w-1/2">
+          <div className="p-1 text-lg text-grey1">WEITERES</div>
+          <div className="p-1 text-sm">SCRUM</div>
+          <div className="p-1 text-sm">USABILITY</div>
+          <div className="p-1 text-sm">UX DESIGN</div>
         </div>
-        <div className="flex-direction breite">
-          <div className="skill-items text-lg text-grey1">MARKETING</div>
-          <div className="skill-items  text-sm">ONPAGE SEO</div>
-          <div className="skill-items  text-sm">OFFPAGE SEO</div>
-          <div className="skill-items  text-sm">CONTENT MARKETING</div>
+        <div className="flex-direction w-1/2">
+          <div className="p-1  text-lg text-grey1">MARKETING</div>
+          <div className="p-1  text-sm">ONPAGE SEO</div>
+          <div className="p-1  text-sm">OFFPAGE SEO</div>
+          <div className="p-1  text-sm">CONTENT MARKETING</div>
         </div>
       </div>
     </div>

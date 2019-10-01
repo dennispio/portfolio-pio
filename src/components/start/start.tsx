@@ -20,25 +20,20 @@ const Start = ({ onChange }: Start): JSX.Element => {
   }
 
   return (
-    <div className="container-full">
+    <div className="container">
       <div className="content-mitte">
         {pulsEffect == false ? (
           <div className={fadeOutEffect}>
-            <p className="text-lg">
-              WELCOME
-              <br />
-              MY NAME IS DENNIS PIOTROWSKI <br />
-              YOU CAN JUST CALL ME PIO
-              <br />
-              IM GLAD THAT YOU ARE VISITING MY WEBSITE <br />
-              IF YOU HAVE ANY PROJECTS JUST CONTACT ME
+            <p className="text-lg max-w-xs">
+              WELCOME MY NAME IS DENNIS PIOTROWSKI YOU CAN JUST CALL ME PIO IM GLAD THAT YOU ARE VISITING MY WEBSITE IF
+              YOU HAVE ANY PROJECTS JUST CONTACT ME
             </p>
             <button onClick={startviewchange} className="buttons pulse">
               EXPLORE
             </button>
           </div>
         ) : (
-          <span className="projectfadein-text projekt-text">TIME FOR THE NEXT PROJECT ?</span>
+          <span className="projectfadein-text md:text-6xl text-2xl">TIME FOR THE NEXT PROJECT ?</span>
         )}
       </div>
     </div>

@@ -6,11 +6,11 @@ const Timeline = (): JSX.Element => {
     <div className="container">
       <h3 className="text-xl mb-20 ">TIMELINE</h3>
       <div>
-        <div className="flex">
-          <div className="w-1/4">
+        <div className="flex flex-col md:flex-row ">
+          <div className="md:w-1/4">
             <span className="text-lg">2013 - 2017</span>
           </div>
-          <div className="element" />
+          <div className="md:w-1/12" />
           <div className="flex flex-col">
             <p className="text-lg">
               BACHELOR DEGREE <br />
@@ -19,7 +19,7 @@ const Timeline = (): JSX.Element => {
             </p>
             <div className="">
               <span className="text-xs text-grey1">FEATURE</span>
-              <div className="flex text-xs ">
+              <div className="flex flex-wrap text-xs ">
                 <span className="pr-5">SCRUM</span>
                 <span className="pr-5">JAVA</span>
                 <span className="pr-5">C++</span>
@@ -35,11 +35,12 @@ const Timeline = (): JSX.Element => {
             </div>
           </div>
         </div>
-        <div className="flex">
-          <div className="w-1/4">
+        <div className="flex flex-col md:flex-row ">
+          <div className="md:w-1/4">
             <span className="text-lg">2018 - 2019</span>
           </div>
-          <div className="element" />
+          <div className="md:w-1/12" />
+
           <div className="flex flex-col">
             <p className="text-lg">
               DESIGN AND DEVELOPER <br />
@@ -47,7 +48,7 @@ const Timeline = (): JSX.Element => {
             </p>
             <div className="hover-fadein">
               <span className="text-xs text-grey1">FEATURE</span>
-              <div className="flex text-xs ">
+              <div className="flex flex-wrap text-xs ">
                 <span className="pr-5">HTML</span>
                 <span className="pr-5">CSS</span>
                 <span className="pr-5">JAVASCRIPT</span>
@@ -64,11 +65,12 @@ const Timeline = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="flex">
-          <div className="w-1/4">
+        <div className="flex flex-col md:flex-row ">
+          <div className="md:w-1/4">
             <span className="text-lg">2018 - 2019</span>
           </div>
-          <div className="element" />
+          <div className="md:w-1/12" />
+
           <div className="flex flex-col">
             <p className="text-lg">
               MASTER DEGREE <br />
@@ -77,7 +79,7 @@ const Timeline = (): JSX.Element => {
             </p>
             <div className="hover-fadein">
               <span className="text-xs text-grey1">FEATURE</span>
-              <div className="flex text-xs ">
+              <div className="flex flex-wrap text-xs ">
                 <span className="pr-5">MYCBR</span>
                 <span className="pr-5">REACT</span>
                 <span className="pr-5">APACHE TOM CAT</span>
@@ -95,11 +97,12 @@ const Timeline = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="flex">
-          <div className="w-1/4">
+        <div className="flex flex-col md:flex-row ">
+          <div className="md:w-1/4">
             <span className="text-lg">2018 - TODAY</span>
           </div>
-          <div className="element" />
+          <div className="md:w-1/12" />
+
           <div className="flex flex-col">
             <p className="text-lg">
               CO - FOUNDER STREETWEAR <br />
@@ -107,7 +110,7 @@ const Timeline = (): JSX.Element => {
             </p>
             <div className="hover-fadein">
               <span className="text-xs text-grey1">FEATURE</span>
-              <div className="flex text-xs ">
+              <div className="flex flex-wrap text-xs ">
                 <span className="pr-5">STREETWEAR</span>
                 <span className="pr-5">DEVELOPEMENT</span>
                 <span className="pr-5">BRANDING</span>
@@ -124,11 +127,12 @@ const Timeline = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="flex">
-          <div className="w-1/4">
+        <div className="flex flex-col md:flex-row ">
+          <div className="md:w-1/4">
             <span className="text-lg">2018 - TODAY</span>
           </div>
-          <div className="element" />
+          <div className="wd:w-1/12" />
+
           <div className="flex flex-col">
             <p className="text-lg">
               FREELANCER AS <br />

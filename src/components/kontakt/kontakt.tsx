@@ -6,15 +6,15 @@ const Kontakt = (): JSX.Element => {
   return (
     <div id="kontakt" className="container">
       <h3 className="text-xl mb-20">KONTAKT</h3>
-      <div className="flex">
-        <div className="w-1/4">
+      <div className="flex flex-col md:flex-row">
+        <div className="md:w-1/4">
           <p className="pb-5">FREE FOR FREELANCING.</p>
           <p className="pb-5">WORKING REMOTE.</p>
           <p className="pb-5">CONTACT ME AND TELL ME ABOUT YOUR NEW PROJECT IDEA </p>
           <p className="pb-5">DENNS.PIOTROWSKI@WEB.DE</p>
         </div>
-        <div className="w-1/5" />
-        <div className="w-2/4">
+        <div className="md:w-1/5" />
+        <div className="md:w-2/4">
           <form className="flex flex-col">
             <label className="text-grey1">NAME</label>
             <input className="text-black h-8"></input>
