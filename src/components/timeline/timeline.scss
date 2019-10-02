@@ -1,11 +1,4 @@
-.element {
-  margin-top: 0.75em;
-  margin-left: 2em;
-  margin-right: 4em;
-  background-color: white;
-  height: 2px;
-  width: 10%;
-}
+@import '../../constants/style/variables.scss';
 
 .hover-fadein {
   opacity: 0;
@@ -14,6 +7,9 @@
   -ms-animation: fadeout 1s; /* Internet Explorer */
   -o-animation: fadeout 1s; /* Opera < 12.1 */
   animation: fadeout 1s;
+  @include sm {
+    opacity: 1;
+  }
 }
 
 .hover-fadein:hover {
