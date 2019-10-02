@@ -5,7 +5,7 @@ import './kontakt.scss'
 const Kontakt = (): JSX.Element => {
   return (
     <div id="kontakt" className="container">
-      <h3 className="text-xl mb-20">KONTAKT</h3>
+      <h3 className="text-xl mb-10 md:mb-20 ">KONTAKT</h3>
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/4">
           <p className="pb-5">FREE FOR FREELANCING.</p>

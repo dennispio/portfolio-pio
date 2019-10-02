@@ -1,3 +1,5 @@
+@import '../../constants/style/variables.scss';
+
 .paragraph-block {
   max-width: 500px;
 }
@@ -15,6 +17,10 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+.marginminus {
+  margin-top: -3rem;
 }
 
 .mitte {

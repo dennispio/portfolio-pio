@@ -72,13 +72,13 @@ const IndexPage = ({ pageContext: { locale }, ...props }: IndexProps): ReactElem
         <div>
           <Navigation />
           <Bio />
-          <div className="h-40" />
+          <div className="md:h-32 h-16" />
           <Timeline />
-          <div className="h-10" />
+          <div className="md:h-8 h-16" />
           <Project />
-          <div className="h-40" />
+          <div className="md:h-24 h-16" />
           <Kontakt />
-          <div className="h-40" />
+          <div className="md:h-32 h-16" />
           <Footer />
         </div>
       )}

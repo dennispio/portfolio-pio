@@ -4,7 +4,7 @@ import './timeline.scss'
 const Timeline = (): JSX.Element => {
   return (
     <div className="container">
-      <h3 className="text-xl mb-20 ">TIMELINE</h3>
+      <h3 className="text-xl mb-10 md:mb-20 ">TIMELINE</h3>
       <div>
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/4">

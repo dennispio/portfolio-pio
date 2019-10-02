@@ -14,7 +14,7 @@ const Bio = (): JSX.Element => {
           </p>
         </div>
       </div>
-      <div className="flex flex-wrap md:flex-no-wrap fade-in-unten">
+      <div className="flex flex-wrap md:flex-no-wrap fade-in-unten marginminus ">
         <div className="flex-direction w-1/2 md:w-1/4">
           <div className="p-1 text-lg text-grey1 typewriter-text">FRONTEND</div>
           <div className="p-1 text-sm">JAVASCRIPT</div>
