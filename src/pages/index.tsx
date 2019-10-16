@@ -76,6 +76,7 @@ const IndexPage = ({ pageContext: { locale }, ...props }: IndexProps): ReactElem
           <Timeline />
           <div className="md:h-8 h-16" />
           <Project />
+          <div className="md:h-1 h-16" />
           <Kontakt />
           <div className="md:h-32 h-16" />
           <Footer />
