@@ -28,9 +28,7 @@ const Start = ({ onChange }: Start): JSX.Element => {
               WELCOME MY NAME IS DENNIS PIOTROWSKI YOU CAN JUST CALL ME PIO IM GLAD THAT YOU ARE VISITING MY WEBSITE IF
               YOU HAVE ANY PROJECTS JUST CONTACT ME
             </p>
-            <button onClick={startviewchange} className="buttons pulse">
-              EXPLORE
-            </button>
+            <button onClick={startviewchange} className="btn-flip" data-back="NOW" data-front="EXPLORE"></button>
           </div>
         ) : (
           <span className="projectfadein-text md:text-6xl text-xl">TIME FOR THE NEXT PROJECT ?</span>

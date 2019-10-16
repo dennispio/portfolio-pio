@@ -25,7 +25,7 @@ const Timeline = (): JSX.Element => {
                 <span className="pr-5">C++</span>
                 <span className="pr-5">SQL</span>
               </div>
-              <div className="text-sm pt-10 pb-10 w-3/4">
+              <div className="text-sm pt-10 pb-10 md:w-3/4 w-full">
                 <p>
                   Some friends of mine and me started an own agency with the focus on coding. We are four full stack
                   developers trying to step into freelancing and gain some momentum with our own site. Unfortunately the
@@ -54,7 +54,7 @@ const Timeline = (): JSX.Element => {
                 <span className="pr-5">JAVASCRIPT</span>
                 <span className="pr-5">CMS</span>
               </div>
-              <div className="text-sm pt-10 pb-10 w-3/4">
+              <div className="text-sm pt-10 pb-10 md:w-3/4 w-full">
                 <p>
                   Some friends of mine and me started an own agency with the focus on coding. We are four full stack
                   developers trying to step into freelancing and gain some momentum with our own site. Unfortunately the
@@ -86,7 +86,7 @@ const Timeline = (): JSX.Element => {
                 <span className="pr-5">SPRING</span>
                 <span className="pr-5">CSS</span>
               </div>
-              <div className="text-sm pt-10 pb-10 w-3/4">
+              <div className="text-sm pt-10 pb-10 md:w-3/4 w-full">
                 <p>
                   Some friends of mine and me started an own agency with the focus on coding. We are four full stack
                   developers trying to step into freelancing and gain some momentum with our own site. Unfortunately the
@@ -116,7 +116,7 @@ const Timeline = (): JSX.Element => {
                 <span className="pr-5">BRANDING</span>
                 <span className="pr-5">MARKETING</span>
               </div>
-              <div className="text-sm pt-10 pb-10 w-3/4">
+              <div className="text-sm pt-10 pb-10 md:w-3/4 w-full">
                 <p>
                   Some friends of mine and me started an own agency with the focus on coding. We are four full stack
                   developers trying to step into freelancing and gain some momentum with our own site. Unfortunately the

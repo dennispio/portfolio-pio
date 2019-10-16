@@ -85,40 +85,61 @@
   font-size: 3em;
 }
 
-.buttons {
-  border: 2px solid white;
+$speed: 0.5s;
+
+.btn-flip {
   margin-top: 40px;
   width: 300px;
   height: 50px;
+  opacity: 1;
+  outline: 0;
   color: white;
-  background-color: black;
-}
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
 
-// Animate the size, outside
-.pulse:hover,
-.pulse:focus {
-  animation: pulse 1s;
-  box-shadow: 0 0 0 2em rgba(#fff, 0);
-}
+  &:hover {
+    &:after {
+      opacity: 1;
+      transform: translateY(0) rotateX(0);
+    }
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
+    &:before {
+      opacity: 0;
+      transform: translateY(50%) rotateX(90deg);
+    }
   }
-}
 
-//=== Set button colors
-// If you wonder why use Sass vars or CSS custom properties...
-// Make a map with the class names and matching colors
-$colors: (
-  pulse: white,
-);
+  &:after {
+    border: 2px solid #323237;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    background: white;
+    display: block;
+    transition: $speed;
+    position: absolute;
+    color: black;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+  }
 
-// Sass variables compile to a static string; CSS variables are dynamic and inherited
-// Loop through the map and set CSS custom properties using Sass variables
-@each $button, $color in $colors {
-  .#{$button} {
-    --color: #{$color};
-    --hover: #{adjust-hue($color, 90deg)};
+  &:before {
+    border: 2px solid white;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: white;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: $speed;
+    position: relative;
+    background: black;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
   }
 }

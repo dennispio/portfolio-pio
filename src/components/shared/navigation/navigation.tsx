@@ -7,7 +7,9 @@ const Navigation = (): JSX.Element => {
     <nav className="fadeintop container-full fixed mt-10">
       <div className="container flex ">
         <div className=" lg:w-1/3 text-xl">
-          <span className="text-white">PIO</span>
+          <Link to="/" className="text-white">
+            PIO
+          </Link>
         </div>
         <div className=" lg:w-2/3 text-xl">
           <a href="https://www.xing.com/profile/Dennis_Piotrowski4" className="ml-5 mr-5 md:mr-10 underline-effect">
