@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import './navigation.scss'
+import { useScrollDirection } from '../../../hooks/hooks'
 
 const Navigation = (): JSX.Element => {
+  const scrollDirection: string = useScrollDirection()
   return (
-    <nav className="fadeintop container-full fixed mt-10">
+    <nav
+      style={scrollDirection === 'UP' || scrollDirection === 'NONE' ? { top: 0 } : { top: '-150px' }}
+      className="fadeintop container-full fixed mt-10"
+    >
       <div className="container flex ">
         <div className=" lg:w-1/3 text-xl">
           <Link to="/" className="text-white">
