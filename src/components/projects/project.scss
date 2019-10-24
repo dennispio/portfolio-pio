@@ -1,8 +1,13 @@
+@import '../../constants/style/variables.scss';
+
 .grid-main {
   display: grid;
   grid-template-columns: 33% auto;
   grid-template-rows: 1fr;
-  height: 45em;
+  height: 40em;
+  @include sm {
+    height: 47em;
+  }
 }
 
 .projekt-reiter {
