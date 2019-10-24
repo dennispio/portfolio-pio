@@ -2,10 +2,7 @@
   display: grid;
   grid-template-columns: 33% auto;
   grid-template-rows: 1fr;
-  height: 40em;
-  @media sm {
-    height: 100em;
-  }
+  height: 50em;
 }
 
 .projekt-reiter {
