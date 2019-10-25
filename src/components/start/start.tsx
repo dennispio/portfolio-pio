@@ -24,9 +24,9 @@ const Start = ({ onChange }: Start): JSX.Element => {
       <div className="content-mitte">
         {pulsEffect == false ? (
           <div className={fadeOutEffect}>
-            <p className="text-lg max-w-xs">
-              WELCOME MY NAME IS DENNIS PIOTROWSKI YOU CAN JUST CALL ME PIO IM GLAD THAT YOU ARE VISITING MY WEBSITE IF
-              YOU HAVE ANY PROJECTS JUST CONTACT ME
+            <p className="text-lg max-w-xs uppercase">
+              WILLKOMMEN ICH HEIßE DENNIS. ICH FREUE MICH DASS DU MEINE WEBSEITE BESUCHST. WENN DU IRGENDWELCHE FRAGEN
+              ZU MEINEN PROJEKTEN ODER ALLGEMEIN ZU MIR, KANNST DU MICH GERNE KONTAKTIEREN.
             </p>
             <button onClick={startviewchange} className="btn-flip" data-back="NOW" data-front="EXPLORE"></button>
           </div>

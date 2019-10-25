@@ -86,9 +86,11 @@ const Master = (): JSX.Element => {
             CASE-BASED REASONING MASTER SOCCER
           </a>
           <p className="max-w-xl uppercase pt-3">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.{' '}
+            Ziel dieser Abschlussarbeit war es ein Konzept zu entwerfen und zu Implementieren das verschiedene
+            Maschinelle Lernverfahren miteinander kombiniert und diese aufbereitet. Weiterhin kann durch das entwickelte
+            System die einzelnen Spieler miteinander verglichen werden und alternativen für für diesen Spieler finden.
+            dafür wurden Daten von verschiedenen Seite gefiltert, durch myCbr eingespeichert, vergleichbar gemacht und
+            durch Spring als Schnittstele mit React visualisiert.
           </p>
           <div className="flex pt-3">
             <div className="w-1/2 text-xs text-grey1 ">
@@ -130,9 +132,11 @@ const Faber = (): JSX.Element => {
             ERNÄHRUNGSBERATUNG FABER
           </a>
           <p className="max-w-xl uppercase pt-3">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.{' '}
+            Ernährungsberatung Faber ist eine in Hannover - Langenhagen ansässige Ernährungsberatung. Ziel dieses
+            Projektes war es, mit minmalen Ertrag das maximalean Performance einer Webseite zu erreichen. Hierfür wurden
+            zwecks maximaler Performancem Technologien wie der Gatsby(Static Site Generator), Netlify (CMS und Host),
+            React und Serveless Functions genutzt. Neben der Erstellung der Webseite wurde Suchmaschinenoptierung
+            betrieben, um möglichst große Sichtbarkeit der Webseite zu erreichen.
           </p>
           <div className="flex pt-3">
             <div className="w-1/2 text-xs text-grey1 ">
@@ -172,9 +176,9 @@ const Other = (): JSX.Element => {
           <span className="text-xs">2019</span>
           <span className="text-xs text-grey1 pt-3">OTHER</span>
           <p className="max-w-xl uppercase pt-3">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.{' '}
+            Bei einem Praktikum bei der Finanzinformatik habe ich einen automatisierten Test implementiert der
+            verschiedene Umgebungen eines Internetsauftritt auf verschiedene Dinge testet. Das ganze wurde in Python
+            umgesetzt.
           </p>
           <div className="flex pt-3">
             <div className="w-1/2 text-xs text-grey1 ">
@@ -212,9 +216,9 @@ const Immajung = (): JSX.Element => {
           IMMAJUNG STREETWEAR
         </a>
         <p className="max-w-xl uppercase pt-3">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-          clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.{' '}
+          Immajung Streetwear brauchte ein Internetauftritt mit einer Anbindung für ein Shopsystem. Dabei muss die
+          Webseite schnellstmöglich die einzelnen Produkte laden und die Kaufabwicklung reibungslos funktionieren. Dabei
+          wurden die Technologien Gatsby.js und Snipcard und NetlifyCMS verwendet
         </p>
         <div className="flex pt-3">
           <div className="w-1/2 text-xs text-grey1 ">
@@ -223,6 +227,7 @@ const Immajung = (): JSX.Element => {
               <span className="pt-3">JAVASCRIPT</span>
               <span className="pt-3">REACT</span>
               <span className="pt-3">SNIPCARD</span>
+              <span className="pt-3">TAILWIND</span>
               <span className="pt-3">NETLIFY</span>
               <span className="pt-3">GATSBY</span>
               <span className="pt-3">CSS</span>
