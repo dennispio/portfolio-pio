@@ -20,18 +20,24 @@ interface HomepageData {
     seo_desc: string
     title: string
     text: string
-  }
-}
-
-interface BlogPosts {
-  node: {
-    fields: {
-      slug: string
+    bio: {
+      text: string
     }
-    frontmatter: {
-      title: string
-      description: string
-      date: string
+    start: {
+      text: string
+    }
+    projekte: {
+      projektetext1: string
+      projektetext2: string
+      projektetext3: string
+      projektetext4: string
+    }
+    timeline: {
+      timelinetext1: string
+      timelinetext2: string
+      timelinetext3: string
+      timelinetext4: string
+      timelinetext5: string
     }
   }
 }
@@ -42,9 +48,6 @@ interface IndexProps {
   }
   data: {
     homePageData: HomepageData
-    blogPosts: {
-      edges: BlogPosts[]
-    }
   }
 }
 
@@ -55,7 +58,6 @@ interface StartProps {
 
 const IndexPage = ({ pageContext: { locale }, ...props }: IndexProps): ReactElement => {
   const { homePageData: data } = props.data
-  const { edges: posts } = props.data.blogPosts
   const [startview, setStartview] = useState(false)
 
   const startviewhandler = ({ newValue }: StartProps): void => {
@@ -67,15 +69,16 @@ const IndexPage = ({ pageContext: { locale }, ...props }: IndexProps): ReactElem
   return (
     <Layout locale={locale}>
       {startview == false ? (
-        <Start onChange={startviewhandler} />
+        <Start startData={data.frontmatter.start} onChange={startviewhandler} />
       ) : (
         <div>
           <Navigation />
-          <Bio />
+          <Bio biodata={data.frontmatter.bio} />
           <div className="md:h-32 h-16" />
-          <Timeline />
+          {console.log(data.frontmatter)}
+          <Timeline timelineData={data.frontmatter.timeline} />
           <div className="md:h-8 h-16" />
-          <Project />
+          <Project projekteData={data.frontmatter.projekte} />
           <Kontakt />
           <div className="md:h-32 h-16" />
           <Footer />
@@ -99,22 +102,24 @@ export const pageQuery = graphql`
         seo_title
         seo_desc
         title
-        text
-      }
-    }
-    blogPosts: allMarkdownRemark(
-      filter: { frontmatter: { pageKey: { eq: "page_blogpost" }, locale: { eq: $locale } } }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            description
-            date
-          }
+        start {
+          text
+        }
+        bio {
+          text
+        }
+        timeline {
+          timelinetext1
+          timelinetext3
+          timelinetext4
+          timelinetext5
+          timelinetext2
+        }
+        projekte {
+          projektetext1
+          projektetext2
+          projektetext3
+          projektetext4
         }
       }
     }

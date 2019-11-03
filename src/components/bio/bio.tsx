@@ -2,17 +2,18 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './bio.scss'
 
-const Bio = (): JSX.Element => {
+interface BioProps {
+  biodata: {
+    text: string
+  }
+}
+
+const Bio = ({ biodata }: BioProps): JSX.Element => {
   return (
     <div className="container">
       <div className="mitte">
         <div className="paragraph-block fade-in-mitte ">
-          <p className="text-lg uppercase">
-            Hey! Ich bin Pio. Ich bin ein Full Stack Entwickler und wohne aktuell in Hannover. Ich bin ein großer
-            Enthusiast von allem was Rund um das World Wide Web geschieht. Ob neue Technologien oder dem online
-            Marketing, ich habe ein großes Interesse diese Dinge zu zu erkunden und mich weiter zu bilden. Ich freue
-            mich jedes mal mit neuen Technologien arbeiten zu dürfen um stetig "up to date" zu sein.
-          </p>
+          <p className="text-lg uppercase">{biodata.text}</p>
         </div>
       </div>
       <div className="flex flex-wrap md:flex-no-wrap fade-in-unten marginminus ">

@@ -5,9 +5,14 @@ import '../start/start.scss'
 
 interface Start {
   onChange: Function
+  startData: StartProps
 }
 
-const Start = ({ onChange }: Start): JSX.Element => {
+interface StartProps {
+  text: string
+}
+
+const Start = ({ onChange, startData }: Start): JSX.Element => {
   const [fadeOutEffect, setfadeOutEffect] = useState('')
   const [pulsEffect, setpulsEffect] = useState(false)
 
@@ -19,15 +24,18 @@ const Start = ({ onChange }: Start): JSX.Element => {
     }, 2000)
   }
 
+  interface StartProps {
+    startData: {
+      text: string
+    }
+  }
+
   return (
     <div className="container">
       <div className="content-mitte">
         {pulsEffect == false ? (
           <div className={fadeOutEffect}>
-            <p className="text-lg max-w-xs uppercase">
-              WILLKOMMEN ICH HEIßE DENNIS. ICH FREUE MICH DASS DU MEINE WEBSEITE BESUCHST. WENN DU IRGENDWELCHE FRAGEN
-              ZU MEINEN PROJEKTEN ODER ALLGEMEIN ZU MIR, KANNST DU MICH GERNE KONTAKTIEREN.
-            </p>
+            <p className="text-lg max-w-xs uppercase">{startData.text}</p>
             <button onClick={startviewchange} className="btn-flip" data-back="NOW" data-front="EXPLORE"></button>
           </div>
         ) : (
