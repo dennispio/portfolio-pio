@@ -3,7 +3,12 @@ import { Link } from 'gatsby'
 import './navigation.scss'
 import { useScrollDirection } from '../../../hooks/hooks'
 
-const Navigation = (): JSX.Element => {
+interface LocaleProps {
+  locale: string
+  localeSwitch: string
+}
+
+const Navigation = ({ locale, localeSwitch }: LocaleProps): JSX.Element => {
   const scrollDirection: string = useScrollDirection()
   return (
     <nav
@@ -11,12 +16,12 @@ const Navigation = (): JSX.Element => {
       className="fadeintop container-full fixed mt-10"
     >
       <div className="container flex ">
-        <div className=" lg:w-1/3 text-xl">
+        <div className="w-1/5 md:w-1/3 lg:w-1/3 text-xl">
           <Link to="/" className="text-white">
             PIO
           </Link>
         </div>
-        <div className=" lg:w-2/3 text-xl">
+        <div className="w-3/5 md:w-3/5 lg:w-2/4 text-xl">
           <a href="https://www.xing.com/profile/Dennis_Piotrowski4" className="ml-5 mr-5 md:mr-10 underline-effect">
             XING
           </a>
@@ -25,6 +30,12 @@ const Navigation = (): JSX.Element => {
           </a>
           <Link to="#kontakt" className="underline-effect">
             KONTAKT
+          </Link>
+        </div>
+        <div className="w-1/5 md:w-1/5 lg:w-1/4 text-xl">
+          <Link className="underline-effect uppercase" to={locale}>
+            {localeSwitch}
+            {console.log(localeSwitch + 'TESTEST')}
           </Link>
         </div>
       </div>

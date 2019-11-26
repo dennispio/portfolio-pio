@@ -1,6 +1,7 @@
 ---
 templateKey: legal
-locale: de
+locale: en
+localeSwitch: de
 pageKey: imprint
 title: Imprint
 date: 2018-12-07T15:04:10.000Z

@@ -16,6 +16,7 @@ interface LegalProps {
         date: Date
         title: string
         description: string
+        localeSwitch: string
       }
     }
   }
@@ -26,7 +27,7 @@ const Legal = ({ pageContext: { locale }, data }: LegalProps): JSX.Element => {
   return (
     <Layout locale={locale}>
       <SEO title="SEO Title Home" metaDescription="SEO Desc Home" />
-      <Navigation />
+      <Navigation locale={'/'} localeSwitch="de" />
       <div className="container">
         <div className="pt-20" />
         <div className="container-normal ">
@@ -50,6 +51,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        localeSwitch
       }
     }
   }

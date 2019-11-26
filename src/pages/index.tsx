@@ -8,7 +8,6 @@ import Bio from '../components/bio/bio'
 import Timeline from '../components/timeline/timeline'
 import Project from '../components/projects/project'
 import Kontakt from '../components/kontakt/kontakt'
-import Footer from '../components/shared/footer/footer'
 
 interface HomepageData {
   fields: {
@@ -16,6 +15,9 @@ interface HomepageData {
   }
   frontmatter: {
     pageKey: string
+    localeSwitch: string
+    pathLink: string
+    locale: string
     seo_title: string
     seo_desc: string
     title: string
@@ -72,19 +74,16 @@ const IndexPage = ({ pageContext: { locale }, ...props }: IndexProps): ReactElem
         <Start startData={data.frontmatter.start} onChange={startviewhandler} />
       ) : (
         <div>
-          <Navigation />
+          <Navigation locale={data.frontmatter.pathLink} localeSwitch={data.frontmatter.localeSwitch} />
           <Bio biodata={data.frontmatter.bio} />
           <div className="md:h-32 h-16" />
-          {console.log(data.frontmatter)}
           <Timeline timelineData={data.frontmatter.timeline} />
           <div className="md:h-8 h-16" />
           <Project projekteData={data.frontmatter.projekte} />
           <Kontakt />
           <div className="md:h-32 h-16" />
-          <Footer />
         </div>
       )}
-      {console.log(startview)}
     </Layout>
   )
 }
@@ -99,6 +98,8 @@ export const pageQuery = graphql`
       }
       frontmatter {
         pageKey
+        localeSwitch
+        pathLink
         seo_title
         seo_desc
         title
