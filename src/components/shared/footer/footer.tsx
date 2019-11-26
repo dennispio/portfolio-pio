@@ -34,8 +34,10 @@ const Footer = ({ locale }: localeProps): JSX.Element => {
             </Link>
           </div>
           <div className="w-1/3 text-center pb-5 flex flex-col">
-            <Link className="pt-5 linkhover opacity-50">BLOG</Link>
-            <Link className="pt-5 linkhover opacity-50">IMMAJUNG</Link>
+            <a className="pt-5 linkhover opacity-50">BLOG</a>
+            <a href="https://www.immajung.com/" className="pt-5 linkhover opacity-50">
+              IMMAJUNG
+            </a>
           </div>
         </div>
       </div>
