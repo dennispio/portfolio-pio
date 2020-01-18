@@ -35,13 +35,10 @@ const Kontakt = (): JSX.Element => {
             <label className="pt-5">
               <span className="pr-5"> DATENSCHUTZ</span> <input type="checkbox" name="vehicle3" value="Boat" required />
             </label>
-            <button
-              className="btn-flip cursor-pointer"
-              data-back="NOW"
-              data-front="SEND ME A MESSAGE"
-              type="submit"
-              value="Submit"
-            />
+            <button data-back="NOW" data-front="SEND ME A MESSAGE" type="submit" value="Submit">
+              {' '}
+              ADAs
+            </button>
           </form>
         </div>
       </div>
