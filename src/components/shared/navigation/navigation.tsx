@@ -35,7 +35,6 @@ const Navigation = ({ locale, localeSwitch }: LocaleProps): JSX.Element => {
         <div className="w-1/5 md:w-1/5 lg:w-1/4 text-xl text-right">
           <Link className="underline-effect uppercase" to={locale}>
             {localeSwitch}
-            {console.log(localeSwitch + 'TESTEST')}
           </Link>
         </div>
       </div>
