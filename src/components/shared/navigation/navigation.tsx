@@ -21,18 +21,18 @@ const Navigation = ({ locale, localeSwitch }: LocaleProps): JSX.Element => {
             PIO
           </Link>
         </div>
-        <div className="w-3/5 md:w-3/5 lg:w-2/4 text-xl">
+        <div className="w-3/5 md:w-3/5 lg:w-2/4 text-xl text-center md:text-left">
           <a href="https://www.xing.com/profile/Dennis_Piotrowski4" className="ml-5 mr-5 md:mr-10 underline-effect">
             XING
           </a>
           <a href="https://github.com/dennispio" className="mr-5 md:mr-10 underline-effect">
             GITHUB
           </a>
-          <Link to="#kontakt" className="underline-effect">
+          {/* <Link to="#kontakt" className="underline-effect">
             KONTAKT
-          </Link>
+          </Link> */}
         </div>
-        <div className="w-1/5 md:w-1/5 lg:w-1/4 text-xl">
+        <div className="w-1/5 md:w-1/5 lg:w-1/4 text-xl text-right">
           <Link className="underline-effect uppercase" to={locale}>
             {localeSwitch}
             {console.log(localeSwitch + 'TESTEST')}

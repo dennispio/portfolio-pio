@@ -15,7 +15,15 @@ const Kontakt = (): JSX.Element => {
         </div>
         <div className="md:w-1/5" />
         <div className="md:w-2/4">
-          <form className="flex flex-col">
+          <form
+            className="flex flex-col"
+            method="POST"
+            action="/danke"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            name="KontaktFormular"
+          >
+            <input type="hidden" name="bot-field" />
             <label className="text-grey1">NAME</label>
             <input className="text-black h-8"></input>
             <label className="text-grey1 pt-3">E-MAIL</label>

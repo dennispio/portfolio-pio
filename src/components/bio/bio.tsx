@@ -20,10 +20,12 @@ const Bio = ({ biodata }: BioProps): JSX.Element => {
         <div className="flex-direction w-1/2 md:w-1/4">
           <div className="p-1 text-lg text-grey1 typewriter-text">FRONTEND</div>
           <div className="p-1 text-sm">JAVASCRIPT</div>
+          <div className="p-1 text-sm">REACTJS</div>
+          <div className="p-1 text-sm">VUEJS</div>
           <div className="p-1 text-sm ">TYPESCRIPT</div>
           <div className="p-1 text-sm ">NETLIFY</div>
-          <div className="p-1 text-sm">REACTJS</div>
           <div className="p-1 text-sm">GATSBYJS</div>
+          <div className="p-1 text-sm">...</div>
         </div>
         <div className="flex-direction w-1/2 md:w-1/4">
           <div className="p-1 text-lg text-grey1">BACKEND</div>
@@ -32,6 +34,8 @@ const Bio = ({ biodata }: BioProps): JSX.Element => {
           <div className="p-1 text-sm ">MYCBR</div>
           <div className="p-1 text-sm">NODEJS</div>
           <div className="p-1 text-sm ">EXPRESSJS</div>
+          <div className="p-1 text-sm ">PYTHON</div>
+          <div className="p-1 text-sm">...</div>
         </div>
         <div className="flex-direction w-1/2 md:w-1/4">
           <div className="p-1 text-lg text-grey1">WEITERES</div>
