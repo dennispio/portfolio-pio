@@ -25,9 +25,9 @@ const Kontakt = (): JSX.Element => {
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="KontaktFormular" />
             <label className="text-grey1">NAME</label>
-            <input className="text-black h-8" name="Name"></input>
+            <input className="text-black h-8" name="Name" type="text"></input>
             <label className="text-grey1 pt-3">E-MAIL</label>
-            <input className="text-black  h-8" name="Email"></input>
+            <input className="text-black  h-8" name="Email" type="email"></input>
             <label className="text-grey1 pt-3">PHONE</label>
             <input className="text-black  h-8" name="Email"></input>
             <label className="text-grey1 pt-3">MESSAGE</label>
