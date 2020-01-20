@@ -4,9 +4,9 @@
   display: grid;
   grid-template-columns: 33% auto;
   grid-template-rows: 1fr;
-  height: 50rem;
+  height: 700px;
   @include sm {
-    height: 56rem;
+    height: 900px;
   }
 }
 
