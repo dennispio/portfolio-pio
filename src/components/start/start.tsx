@@ -35,7 +35,7 @@ const Start = ({ onChange, startData }: Start): JSX.Element => {
   return (
     <div className="container-full">
       <div className={fadeOutEffectBackground} />
-      <div className="content-mitte fade-in">
+      <div className="content-mitte">
         {pulsEffect == false ? (
           <div className={fadeOutEffect}>
             <p className="text-lg max-w-xs uppercase">{startData.text}</p>
