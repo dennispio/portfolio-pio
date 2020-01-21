@@ -6,6 +6,7 @@
   grid-template-rows: 1fr;
   height: 700px;
   @include sm {
+    grid-template-columns: 30% auto;
     height: 58rem;
   }
 }

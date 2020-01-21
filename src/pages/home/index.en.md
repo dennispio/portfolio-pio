@@ -40,12 +40,7 @@ projekte:
     Immajung Streetwear needed an internet presence with a connection for a shop system. The
     Website will load the individual products as quickly as possible and the checkout process will run smoothly. The technologies Gatsby.js and Snipcard and NetlifyCMS were used.
   projektetext2: >-
-    Ernährungsberatung Faber ist eine in Hannover - Langenhagen ansässige Ernährungsberatung. Ziel dieses
-            Projektes war es, mit minmalen Ertrag das maximalean Performance einer Webseite zu erreichen. Hierfür wurden
-            zwecks maximaler Performancem Technologien wie der Gatsby(Static Site Generator), Netlify (CMS und Host),
-            React und Serveless Functions genutzt. Neben der Erstellung der Webseite wurde Suchmaschinenoptierung
-            betrieben, um möglichst große Sichtbarkeit der Webseite zu erreichen.
-
+    Ernährungsberatung Faber is a nutritional advice service based in Hannover - Langenhagen. The aim of this project was to achieve the maximum performance of a website with minimum yield. For this purpose, technologies such as Gatsby (Static Site Generator), Netlify (CMS and Host), React and Serveless Functions were used to achieve maximum performance. In addition to the creation of the website, search engine optimization was carried out to achieve the highest possible visibility of the website.
   projektetext3: >-
     Nutrition consultation Faber is a nutrition consultation resident in Hanover - Langenhagen. A goal of this project was it to reach with minimum yield the maximum at performance of a web page. For maximum performance, technologies such as Gatsby (Static Site Generator), Netlify (CMS and Host), React and Serveless Functions were used. In addition to the creation of the website, search engine optimization was carried out in order to achieve the greatest possible visibility of the website.
   projektetext4: >-
