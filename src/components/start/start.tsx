@@ -15,10 +15,12 @@ interface StartProps {
 const Start = ({ onChange, startData }: Start): JSX.Element => {
   const [fadeOutEffect, setfadeOutEffect] = useState('')
   const [pulsEffect, setpulsEffect] = useState(false)
+  const [fadeOutEffectBackground, setfadeOutEffectBackground] = useState('background-pio')
 
   const startviewchange = (): void => {
     onChange(true)
-    setfadeOutEffect('fade-out')
+    setfadeOutEffect('fade-out ')
+    setfadeOutEffectBackground('background-pio-effect background-pio')
     setTimeout((): void => {
       setpulsEffect(true)
     }, 2000)
@@ -31,8 +33,9 @@ const Start = ({ onChange, startData }: Start): JSX.Element => {
   }
 
   return (
-    <div className="container">
-      <div className="content-mitte">
+    <div className="container-full">
+      <div className={fadeOutEffectBackground} />
+      <div className="content-mitte fade-in">
         {pulsEffect == false ? (
           <div className={fadeOutEffect}>
             <p className="text-lg max-w-xs uppercase">{startData.text}</p>

@@ -10,7 +10,7 @@ interface BioProps {
 
 const Bio = ({ biodata }: BioProps): JSX.Element => {
   return (
-    <div className="container">
+    <div className="container-full">
       <div className="mitte">
         <div className="paragraph-block fade-in-mitte ">
           <p className="text-lg uppercase">{biodata.text}</p>
