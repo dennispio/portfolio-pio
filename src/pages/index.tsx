@@ -65,7 +65,7 @@ const IndexPage = ({ pageContext: { locale }, ...props }: IndexProps): ReactElem
   const startviewhandler = ({ newValue }: StartProps): void => {
     setTimeout((): void => {
       setStartview(newValue)
-    }, 2500)
+    }, 3000)
   }
 
   return (
