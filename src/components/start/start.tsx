@@ -2,6 +2,7 @@ import React, { ReactElement, useState } from 'react'
 import { Link, graphql } from 'gatsby'
 import '../../constants/style/variables.scss'
 import '../start/start.scss'
+import Image from '../util/image/Image'
 
 interface Start {
   onChange: Function
@@ -34,7 +35,10 @@ const Start = ({ onChange, startData }: Start): JSX.Element => {
 
   return (
     <div className="container-full">
-      <div className={fadeOutEffectBackground} />
+      <div />
+      <div className={fadeOutEffectBackground}>
+        <Image alt="backgroundlogo" imageName="background.jpeg" />
+      </div>
       <div className="content-mitte">
         {pulsEffect == false ? (
           <div className={fadeOutEffect}>

@@ -14,7 +14,7 @@ interface Props {
   className?: string
 }
 
-const Image = ({ imageName, maxWidth = 500, className = '' }: Props) => (
+const Image = ({ imageName, maxWidth, className = '' }: Props) => (
   <StaticQuery
     query={graphql`
       query {
