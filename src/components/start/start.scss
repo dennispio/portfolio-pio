@@ -21,11 +21,11 @@
 }
 
 .background-pio-effect {
-  -webkit-animation: fadeouts 5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeouts 5s; /* Firefox < 16 */
-  -ms-animation: fadeouts 5s; /* Internet Explorer */
-  -o-animation: fadeouts 5s; /* Opera < 12.1 */
-  animation: fadeouts 5s;
+  -webkit-animation: fadeouts 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeouts 4s; /* Firefox < 16 */
+  -ms-animation: fadeouts 4s; /* Internet Explorer */
+  -o-animation: fadeouts 4s; /* Opera < 12.1 */
+  animation: fadeouts 4s;
 
   @keyframes fadeouts {
     from {
