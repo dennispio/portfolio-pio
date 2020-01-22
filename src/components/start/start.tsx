@@ -42,7 +42,7 @@ const Start = ({ onChange, startData }: Start): JSX.Element => {
             <button onClick={startviewchange} className="btn-flip" data-back="NOW" data-front="EXPLORE"></button>
           </div>
         ) : (
-          <span className="projectfadein-text md:text-6xl text-xl">TIME FOR THE NEXT PROJECT ?</span>
+          <span className="md:text-6xl text-xl" />
         )}
       </div>
     </div>

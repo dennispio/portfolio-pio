@@ -33,7 +33,9 @@ const Kontakt = (): JSX.Element => {
             <label className="text-grey1 pt-3">MESSAGE</label>
             <textarea className="text-black  h-24" name="Nachricht" />
             <label className="pt-5">
-              <span className="pr-5"> DATENSCHUTZ</span>{' '}
+              <Link to="legal/de/privacy" target="_blank" className="pr-5">
+                PRIVACY
+              </Link>{' '}
               <input type="checkbox" name="vehicle3" value="datenschutz" required />
             </label>
             <button

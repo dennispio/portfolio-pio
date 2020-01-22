@@ -21,11 +21,11 @@
 }
 
 .background-pio-effect {
-  -webkit-animation: fadeouts 8.5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeouts 8.5s; /* Firefox < 16 */
-  -ms-animation: fadeouts 8.5s; /* Internet Explorer */
-  -o-animation: fadeouts 8.5s; /* Opera < 12.1 */
-  animation: fadeouts 8.5s;
+  -webkit-animation: fadeouts 5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeouts 5s; /* Firefox < 16 */
+  -ms-animation: fadeouts 5s; /* Internet Explorer */
+  -o-animation: fadeouts 5s; /* Opera < 12.1 */
+  animation: fadeouts 5s;
 
   @keyframes fadeouts {
     from {
@@ -50,12 +50,12 @@
 }
 
 .fade-out {
-  -webkit-animation: fadeout 2s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadeout 2s; /* Firefox < 16 */
-  -ms-animation: fadeout 2s; /* Internet Explorer */
-  -o-animation: fadeout 2s; /* Opera < 12.1 */
-  animation: fadeout 2s;
-
+  -webkit-animation: fadeout 2s forwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadeout 2s forwards; /* Firefox < 16 */
+  -ms-animation: fadeout 2s forwards; /* Internet Explorer */
+  -o-animation: fadeout 2s forwards; /* Opera < 12.1 */
+  animation: fadeout 2s forwards;
+  animation-fill-mode: forwards;
   @keyframes fadeout {
     from {
       opacity: 1;
@@ -89,7 +89,7 @@
 .projectfadein-text {
   opacity: 0;
   color: white;
-  animation-name: fadeInOut;
+  animation-name: fadeInOut forwards;
   animation-delay: 1s;
   animation-duration: 5s;
 }
