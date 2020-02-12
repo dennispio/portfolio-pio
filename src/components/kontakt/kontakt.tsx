@@ -39,7 +39,6 @@ const Kontakt = (): JSX.Element => {
               <input type="checkbox" required />
             </label>
             <button
-              action="/thankyou"
               className="btn-flip cursor-pointer"
               data-back="NOW"
               data-front="SEND ME A MESSAGE"
