@@ -16,11 +16,11 @@ const Kontakt = (): JSX.Element => {
         <div className="md:w-1/5" />
         <div className="md:w-2/4">
           <form
-          // className="flex flex-col"
-          // method="POST"
-          // data-netlify="true"
-          // data-netlify-honeypot="bot-field"
-          // name="KontaktFormular"
+            className="flex flex-col"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            name="KontaktFormular"
           >
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="KontaktFormular" />
