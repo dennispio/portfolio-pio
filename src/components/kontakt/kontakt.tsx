@@ -25,13 +25,13 @@ const Kontakt = (): JSX.Element => {
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="KontaktFormular" />
             <label className="text-grey1">NAME</label>
-            <input className="text-black h-8" name="Name" type="text"></input>
+            <input className="text-black h-8" required name="Name" type="text"></input>
             <label className="text-grey1 pt-3">E-MAIL</label>
-            <input className="text-black  h-8" name="Email" type="email"></input>
+            <input className="text-black  h-8" required name="Email" type="email"></input>
             <label className="text-grey1 pt-3">PHONE</label>
-            <input className="text-black  h-8" name="Phone"></input>
+            <input className="text-black  h-8" required name="Phone"></input>
             <label className="text-grey1 pt-3">MESSAGE</label>
-            <textarea className="text-black  h-24" name="Nachricht" />
+            <textarea className="text-black  h-24" name="Nachricht" required />
             <label className="pt-5">
               <Link to="legal/de/privacy" target="_blank" className="pr-5">
                 PRIVACY
