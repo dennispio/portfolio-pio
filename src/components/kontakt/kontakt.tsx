@@ -51,7 +51,7 @@ const Kontakt = (): JSX.Element => {
               data-back="NOW"
               data-front="SEND ME A MESSAGE"
               type="submit"
-              value="Send Message"
+              value="submit"
             />
           </form>
         </div>
