@@ -4,7 +4,9 @@ import './kontakt.scss'
 
 const Kontakt = (): JSX.Element => {
   const formHandler = (e: any): void => {
-    e.preventDefault()
+    setTimeout((): void => {
+      console.log('Succes')
+    }, 3000)
   }
 
   return (
@@ -51,7 +53,7 @@ const Kontakt = (): JSX.Element => {
               </Link>{' '}
               <input type="checkbox" required />
             </label>
-            <input
+            <button
               className="btn-flip cursor-pointer"
               data-back="NOW"
               data-front="SEND ME A MESSAGE"
