@@ -25,7 +25,6 @@ const Project = ({ projekteData }: ProjekteProps): JSX.Element => {
   return (
     <div className="container">
       <h3 className="text-xl mb-10 md:mb-20">PROJECT</h3>
-      {console.log(projekteData)}
       <div className="grid-main">
         <div className="project-reiter">
           {changeVis == 'immajung' ? (
