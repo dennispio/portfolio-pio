@@ -21,10 +21,9 @@ const Kontakt = (): JSX.Element => {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             name="contactForm"
-            encType="application/x-www-form-urlencoded"
           >
-            <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contactForm" />
+            <input type="hidden" name="bot-field" />
             <label className="text-grey1" htmlFor="nameContact">
               NAME
             </label>
@@ -41,6 +40,12 @@ const Kontakt = (): JSX.Element => {
               MESSAGE
             </label>
             <textarea className="text-black  h-24" name="nachrichtContact" id="nachrichtContact" required />
+            <label className="pt-5">
+              <Link to="legal/de/privacy" target="_blank" className="pr-5">
+                PRIVACY
+              </Link>{' '}
+              <input type="checkbox" required />
+            </label>
             <button
               className="btn-flip cursor-pointer"
               data-back="NOW"
