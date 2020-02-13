@@ -17,43 +17,36 @@ const Kontakt = (): JSX.Element => {
         <div className="md:w-2/4">
           <form
             className="flex flex-col"
-            action="/thankyou"
             method="POST"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
-            name="contact"
+            name="contact Form"
           >
             <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="form-name" value="contact Form" />
             <label className="text-grey1" htmlFor="fname">
               NAME
             </label>
-            <input className="text-black h-8" required name="name" type="text" id="name" />
+            <input className="text-black h-8" required name="nameContact" type="text" id="nameContact" />
             <label className="text-grey1 pt-3" htmlFor="femail">
               E-MAIL
             </label>
-            <input className="text-black  h-8" required name="email" type="email" id="email" />
+            <input className="text-black  h-8" required name="emailContact" type="email" id="emailContact" />
             <label className="text-grey1 pt-3" htmlFor="fphone">
               PHONE
             </label>
-            <input className="text-black  h-8" required name="phone" id="phone" />
+            <input className="text-black  h-8" required name="phoneContact" id="phoneContact" />
             <label className="text-grey1 pt-3" htmlFor="fmessage">
               MESSAGE
             </label>
-            <textarea className="text-black  h-24" name="nachricht" id="nachricht" required />
+            <textarea className="text-black  h-24" name="nachrichtContact" id="nachrichtContact" required />
             <label className="pt-5" htmlFor="fprivacy">
               <Link to="legal/de/privacy" target="_blank" className="pr-5">
                 PRIVACY
               </Link>{' '}
-              <input type="checkbox" name="Datenschutz" required />
+              <input type="checkbox" name="datenschutzContact" required />
             </label>
-            <button
-              className="btn-flip cursor-pointer"
-              data-back="NOW"
-              data-front="SEND ME A MESSAGE"
-              type="submit"
-              value="Submit"
-            />
+            <button className="btn-flip cursor-pointer" data-back="NOW" data-front="SEND ME A MESSAGE" type="submit" />
           </form>
         </div>
       </div>
