@@ -14,25 +14,19 @@ const Kontakt = (): JSX.Element => {
           <p className="pb-5">DENNS.PIOTROWSKI@WEB.DE</p>
         </div>
         <div className="md:w-1/5" />
-        <div className="md:w-2/4">
-          <form
-            className="flex flex-col"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot-field"
-            name="contact Form"
-          >
+        <div className="md:w-2/4 flex flex-col">
+          <form method="POST" data-netlify="true" data-netlify-honeypot="bot-field" name="contactForm">
             <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact Form" />
-            <label className="text-grey1" htmlFor="fname">
+            <input type="hidden" name="form-name" value="contactForm" />
+            <label className="text-grey1" htmlFor="nameContact">
               NAME
             </label>
             <input className="text-black h-8" required name="nameContact" type="text" id="nameContact" />
-            <label className="text-grey1 pt-3" htmlFor="femail">
+            <label className="text-grey1 pt-3" htmlFor="emailContact">
               E-MAIL
             </label>
             <input className="text-black  h-8" required name="emailContact" type="email" id="emailContact" />
-            <label className="text-grey1 pt-3" htmlFor="fphone">
+            <label className="text-grey1 pt-3" htmlFor="phoneContact">
               PHONE
             </label>
             <input className="text-black  h-8" required name="phoneContact" id="phoneContact" />
@@ -46,7 +40,13 @@ const Kontakt = (): JSX.Element => {
               </Link>{' '}
               <input type="checkbox" name="datenschutzContact" required />
             </label>
-            <button className="btn-flip cursor-pointer" data-back="NOW" data-front="SEND ME A MESSAGE" type="submit" />
+            <button
+              className="btn-flip cursor-pointer"
+              data-back="NOW"
+              data-front="SEND ME A MESSAGE"
+              type="submit"
+              value="Send Message"
+            />
           </form>
         </div>
       </div>
