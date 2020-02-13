@@ -70,17 +70,7 @@ const IndexPage = ({ pageContext: { locale }, ...props }: IndexProps): ReactElem
 
   return (
     <Layout locale={locale}>
-      <div>
-        <Navigation locale={data.frontmatter.pathLink} localeSwitch={data.frontmatter.localeSwitch} />
-        <Bio biodata={data.frontmatter.bio} />
-        <div className="md:h-32 h-16" />
-        <Timeline timelineData={data.frontmatter.timeline} />
-        <div className="md:h-8 h-16" />
-        <Project projekteData={data.frontmatter.projekte} />
-        <Kontakt />
-        <div className="md:h-32 h-16" />
-      </div>
-      {/* {startview == false ? (
+      {startview == false ? (
         <Start startData={data.frontmatter.start} onChange={startviewhandler} />
       ) : (
         <div>
@@ -93,7 +83,7 @@ const IndexPage = ({ pageContext: { locale }, ...props }: IndexProps): ReactElem
           <Kontakt />
           <div className="md:h-32 h-16" />
         </div>
-      )} */}
+      )}
     </Layout>
   )
 }

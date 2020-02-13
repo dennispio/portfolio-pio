@@ -3,6 +3,10 @@ import { Link } from 'gatsby'
 import './kontakt.scss'
 
 const Kontakt = (): JSX.Element => {
+  const formHandler = (e: any): void => {
+    e.preventDefault()
+  }
+
   return (
     <div className="container">
       <h3 className="text-xl mb-10 md:mb-20 ">KONTAKT</h3>
@@ -16,6 +20,7 @@ const Kontakt = (): JSX.Element => {
         <div className="md:w-1/5" />
         <div className="md:w-2/4 flex flex-col">
           <form
+            onSubmit={formHandler}
             method="POST"
             className="flex flex-col"
             data-netlify="true"
