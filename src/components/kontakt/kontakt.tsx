@@ -17,6 +17,7 @@ const Kontakt = (): JSX.Element => {
         <div className="md:w-2/4">
           <form
             className="flex flex-col"
+            action="/thankyou"
             method="POST"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
