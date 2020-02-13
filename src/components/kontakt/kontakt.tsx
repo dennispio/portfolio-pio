@@ -40,13 +40,13 @@ const Kontakt = (): JSX.Element => {
               MESSAGE
             </label>
             <textarea className="text-black  h-24" name="nachrichtContact" id="nachrichtContact" required />
-            <label className="pt-5" htmlFor="fprivacy">
-              <Link to="legal/de/privacy" target="_blank" className="pr-5">
-                PRIVACY
-              </Link>{' '}
-              <input type="checkbox" name="datenschutzContact" required />
-            </label>
-            <button className="btn-flip cursor-pointer" type="submit" value="Send Message" />
+            <button
+              className="btn-flip cursor-pointer"
+              data-back="NOW"
+              data-front="SEND ME A MESSAGE"
+              type="submit"
+              value="Send Message"
+            />
           </form>
         </div>
       </div>
