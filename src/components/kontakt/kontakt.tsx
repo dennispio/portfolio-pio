@@ -23,7 +23,7 @@ const Kontakt = (): JSX.Element => {
             name="Kontakt"
           >
             <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="Kontakt" />
+            <input type="hidden" name="form-name" value="KontaktFormular" />
             <label className="text-grey1">NAME</label>
             <input className="text-black h-8" required name="Name" type="text" id="Name" />
             <label className="text-grey1 pt-3">E-MAIL</label>
@@ -36,7 +36,7 @@ const Kontakt = (): JSX.Element => {
               <Link to="legal/de/privacy" target="_blank" className="pr-5">
                 PRIVACY
               </Link>{' '}
-              <input type="checkbox" required />
+              <input type="checkbox" name="Datenschutz" required />
             </label>
             <button
               className="btn-flip cursor-pointer"
