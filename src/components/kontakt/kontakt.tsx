@@ -46,13 +46,7 @@ const Kontakt = (): JSX.Element => {
               </Link>{' '}
               <input type="checkbox" name="datenschutzContact" required />
             </label>
-            <button
-              className="btn-flip cursor-pointer"
-              data-back="NOW"
-              data-front="SEND ME A MESSAGE"
-              type="submit"
-              value="Send Message"
-            />
+            <button className="btn-flip cursor-pointer" type="submit" value="Send Message" />
           </form>
         </div>
       </div>
