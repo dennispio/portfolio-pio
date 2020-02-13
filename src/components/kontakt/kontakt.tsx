@@ -21,7 +21,6 @@ const Kontakt = (): JSX.Element => {
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             name="Kontakt"
-            netlify
           >
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="KontaktFormular" />
