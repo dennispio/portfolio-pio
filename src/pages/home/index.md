@@ -33,19 +33,19 @@ timeline:
                   "immajung". Da wir selber gerne modische Casual Kleidung tragen, haben wir uns dieser Aufgabe
                   angenommen.
   timelinetext4: >-
-    In der Zeit meines Masterstudiums habe ich bei der Continental AG als Werkstudent gearbeitet. Hierbei
-                 habe ich neben dem Webdesign von internen Webseiten und der anschließenden Programmierung, eine
+    In der Zeit meines Masterstudiums habe ich bei der Continental AG gearbeitet. Hierbei
+                 habe ich neben dem Webdesign von internen Webseiten und der anschließenden Programmierungdieser, ebenfalls eine
                  interne App durch Konzeptentwicklung und Erstellung von User-Stories begleitet.
   timelinetext5: >-
     Im Rahmen meines Bachelor "Informationsmanagement und Informationstechnologie" habe ich viele
                   verschiedene grundlegende Einblicke in diverse Programmiersprachen und Web Technologien (HTML, CSS,
                   JAVASCRIPT, JAVA, C++, SQL, Python) erhalten und in diversen Projekten erste Erfahrungen in der
-                  Softwareentwicklung sammeln. Das Thema meiner Bachelorarbeit behandelte die systematische
+                  Softwareentwicklung gesammelt. Das Thema meiner Bachelorarbeit behandelte die systematische
                   Litereraturrecherche in der Fußballdatenanalyse.
 projekte:
   projektetext1: >-
     Immajung Streetwear brauchte ein Internetauftritt mit einer Anbindung für ein Shopsystem. Dabei muss die
-          Webseite schnellstmöglich die einzelnen Produkte laden und die Kaufabwicklung reibungslos funktionieren. Dabei wurden die Technologien Gatsby.js und Snipcard und NetlifyCMS verwendet.
+          Webseite schnellstmöglich die einzelnen Produkte laden und die Kaufabwicklung reibungslos funktionieren. In diesem Projekt wurden die Technologien Gatsby.js und Snipcart und NetlifyCMS verwendet. Neben der Erstellung der Weboberfläche, wurde seperat eine Webanwendung entwickelt, die es ermöglicht unteranderemm den Lagerbestand automatisiert zu überwachen.
   projektetext2: >-
     Ernährungsberatung Faber ist eine in Hannover - Langenhagen ansässige Ernährungsberatung. Ziel dieses
             Projektes war es, mit minmalen Ertrag das maximalean Performance einer Webseite zu erreichen. Hierfür wurden
@@ -61,7 +61,7 @@ projekte:
   projektetext4: >-
     Ziel dieser Abschlussarbeit war es ein Konzept zu entwerfen und zu Implementieren das verschiedene
             Maschinelle Lernverfahren miteinander kombiniert und diese aufbereitet. Weiterhin kann durch das entwickelte
-            System die einzelnen Spieler miteinander verglichen werden und alternativen für diesen Spieler finden.
-            dafür wurden Daten von verschiedenen Seite gefiltert, durch myCbr eingespeichert, vergleichbar gemacht und
+            System der einzelne Spieler mit anderen Spielern verglichen werden und somit eine alternative gefunden werden.
+            Dafür wurden Daten von verschiedenen Seiten gefiltert, durch Jade aufbgereitet und durch myCbr eingespeichert, vergleichbar gemacht und
             durch Spring als Schnittstele mit React visualisiert.
 ---

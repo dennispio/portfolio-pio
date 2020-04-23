@@ -214,8 +214,9 @@ const Immajung = ({ projekteData }: ProjekteProps): JSX.Element => {
             <span>TECHNOLOGIE STACK</span>
             <div className="text-white flex flex-col">
               <span className="pt-3">JAVASCRIPT</span>
+              <span className="pt-3">GOLANG</span>
               <span className="pt-3">REACT</span>
-              <span className="pt-3">SNIPCARD</span>
+              <span className="pt-3">SNIPCART</span>
               <span className="pt-3">TAILWIND</span>
               <span className="pt-3">NETLIFY</span>
               <span className="pt-3">GATSBY</span>
