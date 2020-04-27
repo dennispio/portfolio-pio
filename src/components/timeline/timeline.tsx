@@ -42,33 +42,6 @@ const Timeline = ({ timelineData }: TimelineProps): JSX.Element => {
 
         <div className="flex flex-col md:flex-row ">
           <div className="md:w-1/5">
-            <span className=" md:text-lg md:text-white text-xs text-grey1">2018 - TODAY</span>
-          </div>
-
-          <div className="flex flex-col md:w-3/4">
-            <p className="text-lg">
-              MASTER DEGREE <br />
-              COMPUTER SCIENCE AND ECONOMICS <br />
-              UNIVERSITY OF HILDESHEIM
-            </p>
-            <div className="hover-fadein">
-              <span className="text-xs text-grey1">FEATURE</span>
-              <div className="flex flex-wrap text-xs ">
-                <span className="pr-5">MYCBR</span>
-                <span className="pr-5">REACT</span>
-                <span className="pr-5">APACHE TOM CAT</span>
-                <span className="pr-5">SPRING</span>
-                <span className="pr-5">CSS</span>
-              </div>
-              <div className="text-sm pt-10 pb-10 uppercase">
-                <p>{timelineData.timelinetext2}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row ">
-          <div className="md:w-1/5">
             <span className="md:text-lg md:text-white text-xs text-grey1">2018 - TODAY</span>
           </div>
           <div className="flex flex-col md:w-3/4">
@@ -86,6 +59,32 @@ const Timeline = ({ timelineData }: TimelineProps): JSX.Element => {
               </div>
               <div className="text-sm pt-10 pb-10 uppercase">
                 <p>{timelineData.timelinetext3}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row ">
+          <div className="md:w-1/5">
+            <span className=" md:text-lg md:text-white text-xs text-grey1">2018 - 2020</span>
+          </div>
+          <div className="flex flex-col md:w-3/4">
+            <p className="text-lg">
+              MASTER DEGREE <br />
+              COMPUTER SCIENCE AND ECONOMICS <br />
+              UNIVERSITY OF HILDESHEIM
+            </p>
+            <div className="hover-fadein">
+              <span className="text-xs text-grey1">FEATURE</span>
+              <div className="flex flex-wrap text-xs ">
+                <span className="pr-5">MYCBR</span>
+                <span className="pr-5">REACT</span>
+                <span className="pr-5">APACHE TOM CAT</span>
+                <span className="pr-5">SPRING</span>
+                <span className="pr-5">CSS</span>
+              </div>
+              <div className="text-sm pt-10 pb-10 uppercase">
+                <p>{timelineData.timelinetext2}</p>
               </div>
             </div>
           </div>
